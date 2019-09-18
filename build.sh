@@ -7,10 +7,10 @@ function build() {
 }
 
 echo -n "Building base image..."
-build puppet/puppet-dev-tools:latest Dockerfile
+build albatrossflavour/puppet-dev-tools:latest Dockerfile
 echo $SHA
 
 echo -n "Building gosu image..."
-build puppet/puppet-dev-tools:gosu gosu/Dockerfile
+build albatrossflavour/puppet-dev-tools:gosu gosu/Dockerfile
 echo $SHA
 

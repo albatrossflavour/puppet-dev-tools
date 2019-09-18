@@ -37,7 +37,7 @@ RUN rpm -i https://pm.puppet.com/cgi-bin/pdk_download.cgi?arch=x86_64\&dist=el\&
 # Install dependent gems
 RUN gem install --no-ri --no-rdoc r10k \
       json \
-      puppet:5.3.3 \
+      puppet \
       rubocop \
       puppetlabs_spec_helper \
       puppet-lint \
